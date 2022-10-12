@@ -7,6 +7,9 @@ import BeachName from './components/BeachName';
 import Narrow from './components/Narrow';
 import Data from './components/Data';
 import SwellImage from './components/SwellImage';
+import NavIcon from './components/NavIcon';
+// import Background from './components/Background';
+// import Menu from './components/Menu';
 
 function App() {
   return (
@@ -15,7 +18,8 @@ function App() {
       <div className='beach_background'>
 
         <div className="banner">
-          <div className="beach_name"><BeachName /></div>
+          <div className='nav_icon'><NavIcon /></div>
+          <div className="beach_name"><BeachName Name='Bloooop' /></div>
           <div className="NorthOrient"><Narrow /></div>
         </div>
 
@@ -26,15 +30,20 @@ function App() {
 
         <div className='wave'>
           <div className="wave_arrow"><Arrow /></div>
-          <div className="wave_direction_data"><Data /></div>
+          <div className="wave_data"><Data /></div>
         </div>
 
         <div className='swell'>
-        <div className="swell_data"><Data /></div>
-        <div className='swell_image'><SwellImage /></div>
+          <div className="swell_data"><Data /></div>
+          <div className='swell_image'><SwellImage /></div>
 
         </div>
 
+
+
+        {/* <div id='beach_menu'>
+            <div><Menu /></div>
+        </div> */}
 
 
 
